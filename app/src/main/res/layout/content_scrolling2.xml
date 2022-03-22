@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nestview"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DiaryDetailActivity"
+
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back5"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/linearLaout10"
+            android:layout_marginTop="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+
+
+            <EditText
+                android:id="@+id/editTitle"
+                android:layout_width="480dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/text_border3"
+
+                android:gravity="center"
+                android:hint="タイトル　13字以内"
+                android:inputType="textPersonName"
+                android:maxLength="13"
+                android:text=""
+                android:textColorHint="@color/colorAccent"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/bottontype3"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="ベストプレイヤー！！"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editBestPlayer"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/text_border3"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="１０字以内"
+                android:inputType="textPersonName"
+                android:maxLength="10"
+                android:text=""
+                android:textColor="#ff0000"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+            tools:layout_editor_absoluteX="-8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bottontype3"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="試合評価"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/spinnerGameValue"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:entries="@array/arrayGameValue" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/bottontype3"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="ダイアリー"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/editDiary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/text_border3"
+
+                android:gravity="top|left"
+                android:hint="３００字以内"
+                android:inputType="textMultiLine"
+                android:lines="15"
+                android:maxLength="300"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text=""
+                android:textColorHint="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/bottontype"
+                android:text="保存" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

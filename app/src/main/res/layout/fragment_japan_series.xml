@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/background"
+    tools:context=".JapanSeriesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/const_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textWinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_border5"
+                android:gravity="center"
+                android:text="日本シリーズ"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/textWinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/text_border5"
+                android:gravity="center"
+                android:text="天下分け目の最終決戦！"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/text_border3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+
+                >
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:layout_weight="3"
+
+                    android:gravity="center"
+                    android:text="チーム"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:text="１戦"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:text="２戦"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:text="３戦"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="４戦"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="５戦"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="６戦"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="７戦"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+
+                android:layout_marginRight="1dp"
+
+                >
+
+                <Button
+                    android:id="@+id/buttonFirstTeam"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+
+                    android:layout_weight="3"
+                    android:background="@drawable/bottontype"
+                    android:gravity="center"
+                    android:text="セCS突破チーム"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/textFirstGameResult1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="#ffffff"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textFirstGameResult2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="#ffffff"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textFirstGameResult3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="#ffffff"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textFirstGameResult4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="#ffffff"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textFirstGameResult5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="#ffffff"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textFirstGameResult6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="#ffffff"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textFirstGameResult7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="#ffffff"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="2dp"
+
+                >
+
+                <Button
+                    android:id="@+id/buttonSecondTeam"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+
+                    android:layout_weight="3"
+                    android:background="@drawable/bottontype"
+                    android:gravity="center"
+                    android:text="パCS突破チーム"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/textSecondGameResult1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="#ffffff"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textSecondGameResult2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="#ffffff"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textSecondGameResult3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#ffffff"
+                    android:text=""
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textSecondGameResult4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="#ffffff"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textSecondGameResult5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="#ffffff"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textSecondGameResult6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#ffffff"
+                    android:text=""
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textSecondGameResult7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#ffffff"
+                    android:text=""
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+            </TableRow>
+        </TableLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="#50fafa"
+            android:gravity="left"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bottontype5"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="試合結果登録"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/bottontype"
+                android:enabled="true"
+                android:text="クリア"
+                android:textColor="@color/design_default_color_on_secondary" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/bottontype2"
+                android:enabled="false"
+                android:text="登録"
+                android:textColor="@color/design_default_color_on_secondary" />
+
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/buttonhiduke"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bottontype"
+            android:text="日付"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textplace"
+            app:layout_constraintEnd_toStartOf="@+id/textplace"
+            app:layout_constraintTop_toTopOf="@+id/textplace" />
+
+        <Spinner
+            android:id="@+id/spinnerPlayOff"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/arrayClimaxFirst"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <TextView
+
+            android:id="@+id/textplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bottontype3"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="球場"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerPlayOff" />
+
+        <EditText
+
+            android:id="@+id/editPlace"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:hint="１０字以内"
+            android:inputType="text"
+            android:maxLength="10"
+            android:text=""
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textplace"
+            app:layout_constraintStart_toEndOf="@+id/textplace"
+            app:layout_constraintTop_toTopOf="@+id/textplace"
+            app:theme="@style/EditTextStyle" />
+
+        <Spinner
+            android:id="@+id/spinnerSecondTeam"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textVS"
+            app:layout_constraintEnd_toStartOf="@+id/textVS"
+            app:layout_constraintTop_toTopOf="@+id/textVS" />
+
+        <TextView
+            android:id="@+id/textVS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="ＶＳ"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textplace" />
+
+        <Spinner
+
+            android:id="@+id/spinnerFirstTeam"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textVS"
+            app:layout_constraintStart_toEndOf="@+id/textVS"
+            app:layout_constraintTop_toTopOf="@+id/textVS" />
+        　　
+
+        <TextView
+
+            android:id="@+id/textSecondResult"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/text_border4"
+            android:gravity="center"
+            android:text=""
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editSecondScore"
+            app:layout_constraintEnd_toStartOf="@+id/editSecondScore"
+            app:layout_constraintTop_toTopOf="@+id/editSecondScore" />
+
+        <EditText
+
+            android:id="@+id/editSecondScore"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="0"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textHifun"
+            app:layout_constraintEnd_toStartOf="@+id/textHifun"
+            app:layout_constraintTop_toTopOf="@+id/textHifun"
+            app:theme="@style/EditTextStyle" />
+
+        <TextView
+
+            android:id="@+id/textHifun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="　－　"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textVS" />
+
+
+        <EditText
+
+            android:id="@+id/editFirstScore"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="0"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textHifun"
+            app:layout_constraintStart_toEndOf="@+id/textHifun"
+            app:layout_constraintTop_toTopOf="@+id/textHifun"
+            app:theme="@style/EditTextStyle" />
+
+        <TextView
+
+            android:id="@+id/textFirstResult"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/text_border4"
+            android:gravity="center"
+            android:text=""
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editFirstScore"
+            app:layout_constraintStart_toEndOf="@+id/editFirstScore"
+            app:layout_constraintTop_toTopOf="@+id/editFirstScore" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bottontype3"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="HR数"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editSecondHomerun"
+            app:layout_constraintEnd_toStartOf="@+id/editSecondHomerun"
+            app:layout_constraintTop_toTopOf="@+id/editSecondHomerun" />
+
+        <EditText
+
+            android:id="@+id/editSecondHomerun"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="0"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:theme="@style/EditTextStyle" />
+
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="本"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/space"
+            app:layout_constraintEnd_toStartOf="@+id/space"
+            app:layout_constraintTop_toTopOf="@+id/space" />
+
+        <Space
+
+            android:id="@+id/space"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textHifun" />
+
+        <TextView
+
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bottontype3"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="HR数"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/space"
+            app:layout_constraintStart_toEndOf="@+id/space"
+            app:layout_constraintTop_toTopOf="@+id/space" />
+
+        <EditText
+
+            android:id="@+id/editFirstHomerun"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="0"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            app:theme="@style/EditTextStyle" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="本"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editFirstHomerun"
+            app:layout_constraintStart_toEndOf="@+id/editFirstHomerun"
+            app:layout_constraintTop_toTopOf="@+id/editFirstHomerun" />
+
+        <TextView
+
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottontype3"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="ベストプレイヤー"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/space2"
+            app:layout_constraintEnd_toStartOf="@+id/space2"
+            app:layout_constraintTop_toTopOf="@+id/space2" />
+
+        <Space
+
+            android:id="@+id/space2"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/space" />
+
+        <TextView
+
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottontype3"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="ベストプレイヤー"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/space2"
+            app:layout_constraintStart_toEndOf="@+id/space2"
+            app:layout_constraintTop_toTopOf="@+id/space2" />
+
+
+        <EditText
+
+            android:id="@+id/editSecondBestPlayer"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:hint="１０字以内"
+            android:inputType="text"
+            android:maxLength="10"
+            android:text=""
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/space3"
+            app:layout_constraintEnd_toStartOf="@+id/space3"
+            app:layout_constraintTop_toTopOf="@+id/space3"
+            app:theme="@style/EditTextStyle" />
+
+        <Space
+
+            android:id="@+id/space3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="60dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/space2" />
+
+
+        <EditText
+
+            android:id="@+id/editFirstBestPlayer"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:hint="１０字以内"
+            android:inputType="text"
+            android:maxLength="10"
+
+            android:text=""
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/space3"
+            app:layout_constraintStart_toEndOf="@+id/space3"
+            app:layout_constraintTop_toTopOf="@+id/space3"
+            app:theme="@style/EditTextStyle" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

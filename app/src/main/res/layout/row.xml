@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/rank"
+        android:textSize="30sp"
+        android:layout_weight="1.4"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/teamName"
+        android:textSize="25sp"
+
+        android:layout_weight="1.6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/totalGame"
+        android:textSize="25sp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/totalWin"
+        android:textSize="25sp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/totalLose"
+        android:textSize="25sp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/totalDraw"
+        android:textSize="25sp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/totalScore"
+        android:textSize="25sp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/totalHomerun"
+        android:textSize="25sp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/winRate"
+        android:textSize="25sp"
+        android:layout_weight="1.5"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

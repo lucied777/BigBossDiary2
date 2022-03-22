@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nestview"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    android:background="@drawable/back5"
+
+    tools:showIn="@layout/activity_scrolling">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+
+            tools:layout_editor_absoluteX="-16dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/text_border4"
+                android:text=" ペナントレース "
+                android:textSize="25sp" />
+
+            <NumberPicker
+                android:id="@+id/pickerYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+
+                android:layout_weight="1"
+                android:background="@drawable/text_border4" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text=" 年 "
+                android:background="@drawable/text_border4"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottontype"
+                android:layout_marginLeft="20dp"
+                android:enabled="true"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="データ消去"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerPenant"
+            tools:layout_editor_absoluteX="0dp">
+
+            <Button
+                android:id="@+id/buttonPaleague"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/bottontype"
+                android:enabled="true"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="パリーグ"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonSeleague"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottontype"
+                android:enabled="true"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="セリーグ"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:layout_editor_absoluteX="-16dp">
+
+            <Button
+                android:id="@+id/buttonInter"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:enabled="true"
+
+                android:text="交流戦"
+                android:background="@drawable/bottontype"
+                android:textSize="20sp"
+                />
+
+
+
+            <Button
+                android:id="@+id/buttonOpen"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:enabled="true"
+                android:text="オープン戦"
+                android:background="@drawable/bottontype"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:layout_editor_absoluteX="0dp">
+
+            <Button
+                android:id="@+id/buttonPaClimaxFirst"
+                android:background="@drawable/bottontype"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="25dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:enabled="true"
+                android:text="パ・CS・First"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonSeClimaxFirst"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:enabled="true"
+                android:background="@drawable/bottontype"
+                android:gravity="center"
+                android:text="セ・CS・First"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:layout_editor_absoluteX="0dp">
+
+            <Button
+                android:id="@+id/buttonPaClimaxFinal"
+                android:background="@drawable/bottontype"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="25dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:enabled="true"
+                android:text="パ・CS・Final"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonSeClimaxFinal"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:enabled="true"
+                android:background="@drawable/bottontype"
+                android:gravity="center"
+                android:text="セ・CS・Final"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:layout_editor_absoluteX="0dp">
+
+            <Button
+                android:id="@+id/buttonJapan"
+                android:background="@drawable/bottontype"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:enabled="true"
+                android:text="日本シリーズ"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
